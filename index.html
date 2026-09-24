@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b16" />
+    <meta name="description" content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich." />
+    <meta property="og:title" content="DevUlrich | Sites e Suporte de TI em São Paulo" />
+    <meta property="og:description" content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devulrich.com" />
+    <meta property="og:image" content="/logo-devulrich.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DevUlrich | Sites e Suporte de TI em São Paulo" />
+    <meta name="twitter:description" content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich." />
+    <link rel="icon" href="/logo-devulrich.png" type="image/png" />
+    <title>DevUlrich | Sites e Suporte de TI em São Paulo</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "DevUlrich",
+        "description": "Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo com atendimento remoto e presencial.",
+        "telephone": "+55 11 97082-0009",
+        "url": "https://devulrich.com",
+        "areaServed": ["São Paulo", "Brasil"],
+        "founder": { "@type": "Person", "name": "Victor Ulrich" },
+        "sameAs": ["https://github.com/Dev-Ulrich", "https://www.linkedin.com/in/victorulrichcosta/"]
+      }
+    </script>
+    <script>
+      try {
+        const saved = localStorage.getItem('devulrich-theme');
+        document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
+          ? saved : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
