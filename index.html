@@ -1,20 +1,76 @@
 <!doctype html>
 <html lang="pt-BR" data-theme="dark">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-02XYFZ5ZGG"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+
+      gtag('js', new Date())
+      gtag('config', 'G-02XYFZ5ZGG')
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#080b16" />
-    <meta name="description" content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich." />
-    <meta property="og:title" content="DevUlrich | Sites e Suporte de TI em São Paulo" />
-    <meta property="og:description" content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich." />
+
+    <meta
+      name="description"
+      content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich."
+    />
+
+    <link rel="canonical" href="https://www.devulrich.com.br/" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="DevUlrich | Sites e Suporte de TI em São Paulo"
+    />
+
+    <meta
+      property="og:description"
+      content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich."
+    />
+
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devulrich.com" />
-    <meta property="og:image" content="/logo-devulrich.png" />
+    <meta property="og:url" content="https://www.devulrich.com.br/" />
+    <meta
+      property="og:image"
+      content="https://www.devulrich.com.br/logo-devulrich.png"
+    />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DevUlrich | Sites e Suporte de TI em São Paulo" />
-    <meta name="twitter:description" content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich." />
+
+    <meta
+      name="twitter:title"
+      content="DevUlrich | Sites e Suporte de TI em São Paulo"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo. Atendimento remoto e presencial com Victor Ulrich."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.devulrich.com.br/logo-devulrich.png"
+    />
+
+    <!-- Favicon -->
     <link rel="icon" href="/logo-devulrich.png" type="image/png" />
+
     <title>DevUlrich | Sites e Suporte de TI em São Paulo</title>
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -22,22 +78,46 @@
         "name": "DevUlrich",
         "description": "Desenvolvimento de sites, landing pages, portfólios e suporte de TI em São Paulo com atendimento remoto e presencial.",
         "telephone": "+55 11 97082-0009",
-        "url": "https://devulrich.com",
-        "areaServed": ["São Paulo", "Brasil"],
-        "founder": { "@type": "Person", "name": "Victor Ulrich" },
-        "sameAs": ["https://github.com/Dev-Ulrich", "https://www.linkedin.com/in/victorulrichcosta/"]
+        "url": "https://www.devulrich.com.br/",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Victor Ulrich"
+        },
+        "sameAs": [
+          "https://github.com/Dev-Ulrich",
+          "https://www.linkedin.com/in/victorulrichcosta/"
+        ]
       }
     </script>
+
+    <!-- Theme preference -->
     <script>
       try {
-        const saved = localStorage.getItem('devulrich-theme');
-        document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
-          ? saved : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        const saved = localStorage.getItem('devulrich-theme')
+
+        document.documentElement.dataset.theme =
+          saved === 'dark' || saved === 'light'
+            ? saved
+            : matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark'
       } catch (_) {}
     </script>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
